@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mathesis</title>
+  <meta name="description" content="Mathesis is an independent laboratory working on AI systems that learn from experience and stay correct while they do.">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #000000;
+      --heading: #ffffff;
+      --body: #888888;
+      --serif: "Instrument Serif", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      background: var(--bg);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: var(--bg);
+      color: var(--body);
+      font-family: var(--serif);
+      font-size: clamp(1.3rem, 1.1rem + 0.7vw, 1.55rem);
+      line-height: 1.5;
+      padding:
+        max(3rem, env(safe-area-inset-top))
+        max(1.5rem, env(safe-area-inset-right))
+        max(2rem, env(safe-area-inset-bottom))
+        max(1.5rem, env(safe-area-inset-left));
+    }
+
+    main {
+      width: 100%;
+      max-width: 34rem;
+      margin: auto 0;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    h1 {
+      margin: 0 0 1.25rem;
+      color: var(--heading);
+      font-weight: 400;
+      font-style: italic;
+      font-size: clamp(4.25rem, 2.5rem + 8vw, 8.5rem);
+      line-height: 1;
+      letter-spacing: -0.02em;
+    }
+
+    .lede {
+      margin: 0 auto;
+      max-width: 28rem;
+      color: var(--heading);
+      font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+      line-height: 1.25;
+    }
+
+    p { margin: 0 0 1.4em; }
+
+    .invitation {
+      margin-top: 3.5rem;
+      margin-bottom: 0;
+      text-align: center;
+      color: var(--heading);
+    }
+
+    .signoff {
+      margin: 0.5rem 0 0;
+      text-align: center;
+      font-style: italic;
+    }
+
+    a {
+      color: var(--heading);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.25em;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    a:focus-visible {
+      outline: 1px solid var(--heading);
+      outline-offset: 0.3em;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Mathesis</h1>
+      <p class="lede">An independent laboratory working on AI systems that learn from experience and stay correct while they do.</p>
+    </header>
+
+    <p>Persistent state is where software fails quietly: a record filed under the wrong owner, two paths through one system giving different answers to the same question. Engineers have decades of practice with these failures when the stored thing is a row. Mathesis starts from what they become when it is a belief that a model acts on, repeats, and builds on.</p>
+
+    <p>There is no agreed way to say what correct means there, let alone to test for it. A system that learns from its history cannot be trusted until that history can be audited, a mistake can be traced to where it entered, and revising it leaves nothing stale behind. The answers decide how much work a long-lived system can safely be given.</p>
+
+    <p>Mathesis is small and early. The work is building systems that accumulate experience, trying to break them over weeks instead of minutes, and writing down what failed.</p>
+
+    <p class="invitation">If you have spent time in the failure modes of stateful systems and wonder what they look like one level up, I would like to hear how you would test for it. Write to me at <a href="mailto:amit@mathesis.me">amit@mathesis.me</a> with a few lines on what you would try first.</p>
+    <p class="signoff">Amit</p>
+  </main>
+
+  <footer>Mathesis</footer>
+</body>
+</html>
